@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentInput === '0') {
             currentInput = number;
         } else {
-            currentInput += number;
+            currentInput = number;
         }
         updateDisplay();
     }
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         operator = op;
         previousInput = currentInput;
-        currentInput = '0';
+        currentInput = op;
         updateDisplay();
     }
 
