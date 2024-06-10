@@ -1,3 +1,5 @@
+```css
+/* General reset and box-sizing setup */
 * {
 	margin: 0;
 	padding: 0;
@@ -5,6 +7,7 @@
 	font-family: sans-serif;
 }
 
+/* Main container for centering the calculator */
 .app {
 	display: flex;
 	justify-content: center;
@@ -12,6 +15,7 @@
 	height: 100vh;
 }
 
+/* Calculator container styling */
 .calculator {
 	background-color: #ccc;
 	width: 100%;
@@ -24,6 +28,7 @@
 	overflow: hidden;
 }
 
+/* Display section styling */
 .display {
 	min-height: 80px;
 	background-color: #444;
@@ -63,6 +68,7 @@
 	color: white;
 }
 
+/* Keys section with grid layout */
 .keys {
 	background-color: #ccc;
 	display: grid;
@@ -70,25 +76,25 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	grid-gap: 1rem;
-	
 }
 
-.keys .key.action{
+/* Different key types styling */
+.keys .key.action {
 	background-color: rgb(214, 71, 71);
 }
 
-.keys .key.operator{
+.keys .key.operator {
 	background-color: #ff9800;
 }
 
-.keys .key.equal{
+.keys .key.equal {
 	background-color: #4caf50;
 }
 
+/* General key styling */
 .keys .key {
 	position: relative;
 	cursor: pointer;
-
 	display: block;
 	height: 0;
 	padding-top: 100%;
@@ -103,20 +109,19 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	font-size: 2rem;
 	font-weight: 700;
 	color: #FFF;
 }
 
+/* Hover effect for keys */
 .keys .key:hover {
 	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
-.keys .key.operator span {
-	color: white;
-}
-
+/* Ensuring operator and action key text color is white */
+.keys .key.operator span,
 .keys .key.action span {
 	color: white;
 }
+```
